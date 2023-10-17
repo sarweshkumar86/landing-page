@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis",sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(80, 121, 85, 0.411),rgba(86, 99, 156, 0.712)),
+    url(../01_project/images/1.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.banner h1{
+    font-size: 4rem;
+    font-weight: 200;
+    color: whitesmoke;
+    padding-bottom: 1.5rem;
+    animation-name: lefttoright;
+    animation-duration: 2s;
+
+}
+.banner span
+{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.banner p{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+    animation-name: righttoleft;
+    animation-duration: 2s;
+    
+}
+
+.banner button
+{
+    width: 7rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    border: 2px solid whitesmoke;
+    background-color: rgb(206, 236, 236);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.banner .left-btn
+{
+background-color: rgb(255, 255, 255);
+animation-name: btn;
+animation-duration: 1.5s;
+animation-delay: 1s;
+animation-fill-mode: backwards;
+animation-timing-function: ease-in;
+
+}
+.banner .right-btn
+{
+    background-color: transparent;
+    color: whitesmoke;
+    animation-name: btn;
+animation-duration: 2s;
+animation-delay: 1.5s;
+animation-fill-mode: backwards;
+animation-timing-function: ease-in;
+   
+}
+
+@keyframes lefttoright {
+    0%{
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes righttoleft {
+    0%{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes btn {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
